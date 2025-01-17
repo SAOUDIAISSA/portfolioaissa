@@ -1,0 +1,396 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #2c2c2c;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(240, 240, 240, 0.9); /* Fond gris clair */
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneur principal du header */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Espace entre le logo et le menu */
+    align-items: center;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrer le contenu */
+}
+
+/* Logo */
+.logo-container {
+    flex: 1; /* Prend l'espace à gauche */
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff7a00; /* Couleur orange */
+}
+
+/* Menu */
+.menu-container {
+    flex: 1; /* Prend l'espace à droite */
+    display: flex;
+    justify-content: flex-end; /* Positionne le menu à droite */
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espace entre les liens */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: inline-block;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 1.2rem;
+    padding: 10px 17px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a.active,
+.navbar-links li a:hover {
+    color: #ff7a00; /* Couleur orange pour le lien actif ou au survol */
+}
+
+
+/* Ajouter un espace pour éviter que le contenu soit masqué par le header */
+.projects {
+    margin-top: 100px; /* Correspond à la hauteur du header */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.projects h1 {
+    font-size: 2.8rem;
+    color: #ff7a00;
+    margin-bottom: 20px;
+}
+
+.projects p {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    color: #4a4a4a;
+    line-height: 1.8;
+}
+
+/* Reste du style */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    color: #ff7a00;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn-demo,
+.btn-github,
+.btn-more {
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-demo {
+    background-color: #ff7a00;
+    color: white;
+}
+
+.btn-github {
+    background-color: #24292e;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-github img {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-more {
+    background-color: #f4f4f4;
+    color: #2c2c2c;
+    border: 1px solid #ccc;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-demo:hover,
+.btn-github:hover,
+.btn-more:hover {
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+}
+/* Styles généraux pour les boutons */
+.project-buttons .btn-demo,
+.project-buttons .btn-github,
+.project-buttons .btn-more {
+    display: flex; /* Utilise Flexbox */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    text-align: center; /* Centre le texte */
+    padding: 8px 12px; /* Ajuste les espacements internes */
+    border-radius: 5px; /* Arrondit les coins */
+    text-decoration: none;
+    font-size: 0.9rem; /* Taille du texte */
+    transition: all 0.3s ease;
+}
+
+/* Bouton Voir la Démo */
+.btn-demo {
+    background-color: #ff7a00;
+    color: white;
+}
+
+/* Bouton GitHub */
+.btn-github {
+    background-color: #24292e;
+    color: white;
+    gap: 5px; /* Espace entre l'icône et le texte */
+}
+
+/* Icône GitHub */
+.btn-github img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Bouton En savoir plus */
+.btn-more {
+    background-color: #f4f4f4;
+    color: #2c2c2c;
+    border: 1px solid #ccc;
+}
+
+/* Effets au survol */
+.btn-demo:hover,
+.btn-github:hover,
+.btn-more:hover {
+    opacity: 0.9;
+}
+/* Modale Vidéo */
+#videoModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#videoModal.hidden {
+    display: none;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 800px;
+    width: 90%;
+    background: #000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#projectVideo {
+    width: 100%;
+    height: auto;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff7a00;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.close-modal:hover {
+    background-color: #cc6300;
+}
+/* --- Responsive Design pour Tablettes et Mobiles (max-width: 768px) --- */
+@media (max-width: 768px) {
+    /* Header */
+    .header-container {
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+
+    .navbar-links {
+        display: flex; /* Menu horizontal */
+        flex-wrap: nowrap; /* Empêche les liens de passer à la ligne */
+        justify-content: center; /* Centre les liens */
+        gap: 10px; /* Espace entre les liens */
+        padding: 10px 0;
+        overflow-x: auto; /* Ajoute un défilement horizontal si nécessaire */
+        white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    }
+
+    .navbar-links li a {
+        font-size: 0.9rem;
+        padding: 6px 8px;
+    }
+
+    /* Section Projets */
+    .projects {
+        margin-top: 80px;
+        padding: 20px 10px;
+    }
+
+    .projects h1 {
+        font-size: 1.8rem;
+    }
+
+    .projects p {
+        font-size: 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+        gap: 20px;
+    }
+
+    .project {
+        padding: 15px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .project img {
+        height: auto;
+        max-height: 180px;
+    }
+
+    .project h3 {
+        font-size: 1.2rem;
+    }
+
+    .project p {
+        font-size: 0.9rem;
+    }
+
+    /* Boutons */
+    .project-buttons {
+        flex-wrap: wrap; /* Les boutons passent à la ligne si nécessaire */
+        gap: 10px;
+        justify-content: center; /* Centre les boutons */
+    }
+
+    .btn-demo,
+    .btn-github,
+    .btn-more {
+        padding: 6px 10px; /* Réduction de la taille des boutons */
+        font-size: 0.85rem;
+    }
+
+    .btn-github {
+        display: flex;
+        align-items: center;
+        gap: 5px; /* Espace entre l'icône et le texte */
+        background-color: #24292e;
+        color: white;
+    }
+
+    .btn-github img {
+        width: 14px; /* Taille réduite de l'icône */
+        height: 14px;
+    }
+
+    .btn-demo {
+        background-color: #ff7a00;
+    }
+
+    .btn-more {
+        background-color: #f4f4f4;
+        color: #2c2c2c;
+        border: 1px solid #ccc;
+    }
+}

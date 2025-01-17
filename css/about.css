@@ -1,0 +1,350 @@
+/* --- Reset CSS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Global Styles --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; /* Fond blanc */
+    color: #2c2c2c; /* Texte gris foncé */
+    line-height: 1.8;
+}
+
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(240, 240, 240, 0.9); /* Fond gris clair */
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneur principal du header */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Espace entre le logo et le menu */
+    align-items: center;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrer le contenu */
+}
+
+/* Logo */
+.logo-container {
+    flex: 1; /* Prend l'espace à gauche */
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff7a00; /* Couleur orange */
+}
+
+/* Menu */
+.menu-container {
+    flex: 1; /* Prend l'espace à droite */
+    display: flex;
+    justify-content: flex-end; /* Positionne le menu à droite */
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espace entre les liens */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: inline-block;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 1.2rem;
+    padding: 10px 17px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a.active,
+.navbar-links li a:hover {
+    color: #ff7a00; /* Couleur orange pour le lien actif ou au survol */
+}
+
+
+/* --- Section À propos --- */
+.about {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 2;
+    font-size: 1.2rem;
+    color: #333333;
+    text-align: justify;
+}
+
+.about-text h1 {
+    font-size: 2.8rem;
+    color: #ff7a00;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* --- P1 --- */
+p1 {
+    display: block;
+    margin-bottom: 10px; /* Espacement entre paragraphes */
+    font-size: 1.2rem;
+    color: #2c2c2c;
+}
+
+/* --- P2 --- */
+/* --- P2 --- */
+p2 {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #2c2c2c;
+    text-align: left; /* Aligne le texte à droite */
+    padding-right: 0%; /* Optionnel : ajoute un espacement depuis le bord droit */
+}
+
+/* --- P3 --- */
+p3 {
+    display: block;
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+    color: #2c2c2c;
+    text-align: left; /* Aligne le texte à droite */
+    padding-right: 0%; /* Optionnel : ajoute un espacement depuis le bord droit */
+}
+
+/* Photo */
+.about-photo {
+    flex: 1;
+    max-width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 5px solid #ff7a00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3cm; /* Décale la photo de 2 cm vers le bas */
+}
+
+
+.about-photo img {
+    width:100% ;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(240, 240, 240, 0.9);
+    color: #2c2c2c;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+}
+/* --- Section Compétences --- */
+.skills {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    color: #ff7a00;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.skill {
+    text-align: center;
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+
+.skill img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skill p {
+    font-size: 1.2rem;
+    color: #2c2c2c;
+}
+.skill img[alt="Blender Icon"] {
+    border: 2px solid #f5792a; /* Couleur spécifique pour Blender */
+}
+/* --- Responsive Design pour Tablettes et Mobiles --- */
+@media (max-width: 768px) {
+    /* Header */
+    .header-container {
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+
+    .navbar-links {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 8px 0;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .navbar-links li a {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+        color: #2c2c2c;
+        border-radius: 4px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar-links li a:hover {
+        background-color: #ff7a00;
+        color: white;
+    }
+
+    /* Section À propos */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .about-text h1 {
+        font-size: 1.8rem;
+    }
+    .about-text p1 {
+        font-size: 1rem;
+    } .about-text p2 {
+        font-size: 1rem;
+    } .about-text p3 {
+        font-size: 1rem;
+    }
+    .about-photo {
+        max-width: 100%;
+        height: 100%;
+        margin: auto; /* Centre la photo */
+        margin-top: 20px;
+    }
+
+    .about-photo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Section Compétences */
+    .skills h2 {
+        font-size: 1.8rem;
+    }
+
+    .skills-container {
+        gap: 15px;
+    }
+
+    .skill {
+        width: 100px;
+    }
+
+    .skill img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .skill p {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.8rem;
+        padding: 15px;
+    }
+}
+
+/* --- Ajustements supplémentaires pour très petits écrans (max-width: 480px) --- */
+@media (max-width: 480px) {
+    body {
+        font-size: 13px;
+    }
+
+    .about-text {
+        font-size: 0.9rem;
+    }
+
+    .about-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-photo {
+        max-width: 150px;
+        height: 150px;
+    }
+
+    .skills h2 {
+        font-size: 1.5rem;
+    }
+
+    .skills-container {
+        gap: 10px;
+    }
+
+    .skill {
+        width: 80px;
+    }
+
+    .skill img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skill p {
+        font-size: 0.8rem;
+    }
+}
