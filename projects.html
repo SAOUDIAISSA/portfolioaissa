@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets - Portfolio Aissa Saoudi</title>
+    <link rel="stylesheet" href="css/projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <!-- Div pour le logo -->
+            <div class="logo-container">
+                <div class="logo">Aissa Saoudi</div>
+            </div>
+            <!-- Div pour le menu -->
+            <div class="menu-container">
+                <ul class="navbar-links">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="projects.html">Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- Section Projets -->
+    <section class="projects">
+        <h1>Mes Projets</h1>
+        <p>Découvrez mes travaux en développement web, modélisation 3D, et bien plus encore.</p>
+        <div class="projects-grid">
+            <!-- Projet 1 -->
+            <div class="project">
+                <img src="images/ai.png" alt="AI avec Unity">
+                <h3>AI avec Unity</h3>
+                <p class="short-description">Création d'un PNJ Interactif avec Animations et Synthèse Vocale.</p>
+                <p class="long-description hidden">Dans ce projet, un personnage non-joueur (PNJ) a été développé pour interagir avec les utilisateurs dans Unity. Le PNJ intègre des animations dynamiques (Idle, Thinking, Talking) pour rendre l'expérience immersive. L'avatar utilise l'API Groq pour générer des réponses textuelles basées sur l'intelligence artificielle et l'API Play.ht pour transformer ces réponses en synthèse vocale, offrant une expérience sonore réaliste. Un système de mémoire permet au PNJ de se souvenir des conversations, et une interface utilisateur intuitive gère les échanges. Ce projet met en avant des techniques avancées en animation, en intégration d'API, et en gestion des états d'animation.</p>
+                <div class="project-buttons">
+                    <button class="btn-more" onclick="toggleDescription(this)">En savoir plus</button>
+                    <button class="btn-demo" onclick="playVideo('videos/projet2.mp4')">Voir la Démo</button>
+                    <a href="https://github.com/SAOUDIAISSA/ai-speeshproject" class="btn-github">
+                        <img src="images/git.png" alt="GitHub"> Code GitHub
+                    </a>
+                </div>
+            </div>
+            <!-- Projet 2 -->
+            <div class="project">
+                <img src="images/chasse.png" alt="Jeu de chasse">
+                <h3>Jeu de chasse avec Unity</h3>
+                <p class="short-description">un jeu de chasse immersif et interactif développé avec Unity et C#.</p>
+                <p class="long-description hidden"> Le joueur incarne un chasseur évoluant dans un monde réaliste où la physique joue un rôle central. En utilisant des mécaniques basées sur des colliders, rigidbodies, forces, et ragdoll physics, le jeu offre des combats fluides et dynamiques contre des loups et des monstres.
+
+                    Le gameplay inclut des interactions réalistes telles que des portes articulées avec des joints, des simulations de forces précises pour les tirs, et une optimisation avancée pour garantir des performances fluides. Programmé en C#, chaque aspect du jeu met en valeur des scripts robustes et efficaces, assurant une expérience captivante et fluide pour le joueur.</p>
+                <div class="project-buttons">
+                    <button class="btn-more" onclick="toggleDescription(this)">En savoir plus</button>
+                    <button class="btn-demo" onclick="playVideo('videos/projet1.mp4')">Voir la Démo</button>
+                    <a href="https://github.com/SAOUDIAISSA/jeu-chasse" class="btn-github">
+                        <img src="images/git.png" alt="GitHub"> Code GitHub
+                    </a>
+                </div>
+            </div>
+            <!-- Projet 3 -->
+            <div class="project">
+                <img src="images/image.png" alt="Application VR">
+                <h3>application film</h3>
+                <p class="short-description">Movie Explorer est une application Flutter conçue pour explorer et afficher des informations sur des films.</p>
+                <p class="long-description hidden"> L'application propose une interface utilisateur intuitive avec des fonctionnalités telles que la recherche de films, l'affichage des détails d'un film, et la navigation entre différentes pages (Accueil, Profil, Paramètres). Les utilisateurs peuvent se connecter ou s'inscrire via des formulaires avec validation des champs. Le projet met en œuvre des concepts clés comme la gestion d'état avec setState, les appels API HTTP, et une navigation fluide entre les écrans.</p>
+                <div class="project-buttons">
+                    <button class="btn-more" onclick="toggleDescription(this)">En savoir plus</button>
+                    <button class="btn-demo" onclick="playVideo('videos/flluter.mp4')">Voir la Démo</button>
+                    <a href="https://github.com/SAOUDIAISSA/film" class="btn-github">
+                        <img src="images/git.png" alt="GitHub"> Code GitHub
+                    </a>
+                </div>
+            </div>
+            <!-- Projet 4 -->
+            <div class="project">
+                <img src="images\portfolio.png" alt="Modélisation 3D">
+                <h3>Création de ce Portfolio</h3>
+                <p class="short-description">Ce portfolio a été réalisé en combinant HTML, CSS, et JavaScript pour créer un design moderne et interactif.</p>
+                <p class="long-description hidden"> L’approche UX (User Experience) a été intégrée pour assurer une navigation intuitive et agréable. Chaque page a été optimisée pour être responsive, offrant une expérience fluide sur tous les appareils, qu’il s’agisse d’un ordinateur ou d’un mobile. Les projets sont mis en valeur grâce à des animations légères et des boutons dynamiques. L’utilisation d’éléments interactifs, tels que des vidéos, des modales et des liens vers GitHub, renforce l’engagement de l'utilisateur et met en avant les compétences techniques présentées dans ce portfolio..</p>
+                <div class="project-buttons">
+                    <button class="btn-more" onclick="toggleDescription(this)">En savoir plus</button>
+                    
+                    <a href="https://github.com/SAOUDIAISSA/portfolio.git" class="btn-github">
+                        <img src="images/git.png" alt="GitHub"> Code GitHub
+                    </a>
+                </div>
+            </div>
+            <!-- Projet 5 : Stage de fin d’études -->
+<div class="project">
+    <img src="images\projet5.png" alt="Stage de fin d’études – Détection d’objets sur chantiers ferroviaires">
+    <h3>Stage de fin d’études — Détection d’objets sur chantiers ferroviaires</h3>
+
+    <p class="short-description">
+        Évaluation de l’impact des données synthétiques et génératives (Unity et CIA Framework) sur
+        l’entraînement de modèles de détection d’objets dans des environnements de chantiers ferroviaires.
+    </p>
+
+    <p class="long-description hidden">
+        Stage réalisé au sein de l’équipe Deep’ILIA de l’Université de Mons, en collaboration avec Warner & Spencer.
+        Le projet avait pour objectif d’étudier comment l’utilisation de données artificielles pouvait améliorer
+        la performance des modèles de vision par ordinateur dans des contextes industriels complexes.
+
+        La première étape consistait à simuler des scénarios de risque sur des chantiers ferroviaires en utilisant Unity HDRP,
+        afin de générer des scènes 3D réalistes avec différentes conditions météo, d’éclairage et de positionnement des caméras.
+        Ces scènes ont permis de produire automatiquement des images annotées à l’aide du module Unity Perception.
+
+        Parallèlement, des images ont été générées à l’aide du framework CIA, basé sur des modèles de diffusion, pour enrichir
+        la diversité du jeu de données en introduisant des variations de contexte et de rendu visuel.
+
+        Les différents jeux de données (réels, synthétiques, génératifs et mixtes) ont ensuite été utilisés pour l’entraînement
+        de plusieurs modèles de détection d’objets (YOLOv11) sur Google Colab Pro.
+        Les performances ont été évaluées à l’aide de métriques standardisées telles que la précision, le rappel et le mAP.
+
+        Les résultats ont montré que les données synthétiques seules restaient limitées pour les conditions réelles,
+        mais que la combinaison de données réelles, synthétiques et génératives permettait d’améliorer la robustesse
+        et la généralisation des modèles de détection.
+    </p>
+
+    <div class="project-buttons">
+        <button class="btn-more" onclick="toggleDescription(this)">En savoir plus</button>
+        <button class="btn-demo" onclick="playVideo('videos/stage.mp4')">Voir la Démo</button>
+        <a href="https://github.com/SAOUDIAISSA/stage-detection-objets" class="btn-github">
+            <img src="images/git.png" alt="GitHub"> Code GitHub
+        </a>
+    </div>
+</div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Aissa Saoudi.</p>
+    </footer>
+
+    <!-- Modale Vidéo -->
+    <div id="videoModal" class="hidden">
+        <div class="modal-content">
+            <video id="projectVideo" controls></video>
+            <button class="close-modal" onclick="closeVideo()">Fermer</button>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+        function toggleDescription(button) {
+            const project = button.closest('.project');
+            const longDescription = project.querySelector('.long-description');
+            longDescription.classList.toggle('hidden');
+            button.textContent = longDescription.classList.contains('hidden') ? 'En savoir plus' : 'Voir moins';
+        }
+
+        function playVideo(videoSrc) {
+            const videoModal = document.getElementById('videoModal');
+            const projectVideo = document.getElementById('projectVideo');
+            videoModal.classList.remove('hidden');
+            projectVideo.src = videoSrc;
+            projectVideo.play();
+        }
+
+        function closeVideo() {
+            const videoModal = document.getElementById('videoModal');
+            const projectVideo = document.getElementById('projectVideo');
+            projectVideo.pause();
+            projectVideo.src = '';
+            videoModal.classList.add('hidden');
+        }
+    </script>
+    <script>
+        function playVideo(videoUrl) {
+            // Crée une modale contenant la vidéo
+            const modal = document.createElement('div');
+            modal.style.position = 'fixed';
+            modal.style.top = '0';
+            modal.style.left = '0';
+            modal.style.width = '100vw';
+            modal.style.height = '100vh';
+            modal.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+            modal.style.display = 'flex';
+            modal.style.justifyContent = 'center';
+            modal.style.alignItems = 'center';
+            modal.style.zIndex = '1000';
+    
+            // Ajoute la vidéo à la modale
+            const video = document.createElement('video');
+            video.src = videoUrl;
+            video.controls = true;
+            video.autoplay = true;
+            video.style.maxWidth = '90%';
+            video.style.maxHeight = '90%';
+            video.style.borderRadius = '10px';
+            video.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.3)';
+    
+            // Bouton pour fermer la modale
+            const closeButton = document.createElement('button');
+            closeButton.textContent = '✖';
+            closeButton.style.position = 'absolute';
+            closeButton.style.top = '20px';
+            closeButton.style.right = '20px';
+            closeButton.style.background = 'transparent';
+            closeButton.style.border = 'none';
+            closeButton.style.color = 'white';
+            closeButton.style.fontSize = '1.5rem';
+            closeButton.style.cursor = 'pointer';
+    
+            // Fermeture de la modale
+            closeButton.addEventListener('click', () => {
+                document.body.removeChild(modal);
+            });
+    
+            modal.appendChild(video);
+            modal.appendChild(closeButton);
+            document.body.appendChild(modal);
+        }
+    </script>
+    
+</body>
+</html>

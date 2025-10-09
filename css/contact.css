@@ -1,0 +1,387 @@
+/* --- Global Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Global Styles --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; /* Fond blanc */
+    color: #2c2c2c; /* Couleur texte gris foncé */
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(240, 240, 240, 0.9); /* Fond gris clair */
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneur principal du header */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Espace entre le logo et le menu */
+    align-items: center;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrer le contenu */
+}
+
+/* Logo */
+.logo-container {
+    flex: 1; /* Prend l'espace à gauche */
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff7a00; /* Couleur orange */
+}
+
+/* Menu */
+.menu-container {
+    flex: 1; /* Prend l'espace à droite */
+    display: flex;
+    justify-content: flex-end; /* Positionne le menu à droite */
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espace entre les liens */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: inline-block;
+}
+.navbar-links li a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 1.2rem;
+    padding: 10px 17px;
+    transition: color 0.3s ease;
+}
+.navbar-links li a.active,
+.navbar-links li a:hover {
+    color: #ff7a00; /* Couleur orange pour le lien actif ou au survol */
+}
+
+
+/* --- Section Titre --- */
+.contact-header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f9f9f9; /* Fond légèrement gris */
+}
+
+.contact-header h1 {
+    font-size: 2.5rem;
+    color: #ff7a00;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+    color: #4a4a4a; /* Couleur texte gris doux */
+}
+
+/* --- Section Contact --- */
+.contact-hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+}
+
+/* Formulaire */
+.contact-form {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c2c2c;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff7a00;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px 25px;
+    background-color: #ff7a00;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #cc6300;
+}
+
+/* Réseaux sociaux */
+.contact-info {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-image img {
+    max-width: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.social-icons h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icons .icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.icons .icon:hover {
+    transform: scale(1.1); /* Agrandit légèrement au survol */
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(240, 240, 240, 0.9); /* Fond gris clair légèrement transparent */
+    color: #2c2c2c; /* Couleur texte gris foncé */
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+}
+.contact-image img {
+    width: 250px; /* Largeur de l'image */
+    height: 250px; /* Hauteur de l'image */
+    border-radius: 50%; /* Forme circulaire */
+    border: 5px solid #ff7a00; /* Bordure orange */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Ombre prononcée */
+    object-fit: cover; /* Ajuste l'image pour qu'elle soit bien cadrée */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation au survol */
+}
+
+.contact-image img:hover {
+    transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Accentue l'ombre au survol */
+}
+
+/* Ajout d'un effet de "halo" ou lumière */
+.contact-image img:focus {
+    outline: none;
+    box-shadow: 0 0 20px rgba(255, 122, 0, 0.5); /* Lumière orange autour au focus */
+}
+/* Section des réseaux sociaux */
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* Section des coordonnées */
+.contact-details {
+    text-align: center;
+    font-size: 1rem;
+    color: #2c2c2c;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.contact-details h3 {
+    font-size: 1.5rem;
+    color: #ff7a00;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    margin: 5px 0;
+}
+
+.contact-details a {
+    color: #ff7a00;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+/* --- Responsive Design pour Tablettes et Mobiles --- */
+@media (max-width: 768px) {
+    /* Header */
+    .header-container {
+        flex-wrap: wrap; /* Permet au contenu de s'adapter à la largeur */
+        padding: 10px 20px;
+    }
+
+    .navbar-links {
+        display: flex;
+        flex-wrap: nowrap; /* Menu horizontal */
+        justify-content: center;
+        gap: 10px; /* Réduit l'espace entre les liens */
+        padding: 10px 0;
+        overflow-x: auto; /* Ajoute un défilement horizontal si nécessaire */
+        white-space: nowrap; /* Empêche les liens de passer à la ligne */
+    }
+
+    .navbar-links li a {
+        font-size: 0.9rem; /* Réduit la taille des liens */
+        padding: 6px 8px;
+    }
+
+    /* Section Titre */
+    .contact-header {
+        padding: 20px 10px;
+    }
+
+    .contact-header h1 {
+        font-size: 1.8rem; /* Réduit la taille du titre */
+    }
+
+    .contact-header p {
+        font-size: 1rem; /* Réduit la taille du texte */
+    }
+
+    /* Section Contact */
+    .contact-hero {
+        flex-direction: column; /* Empile le contenu en colonne */
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    .contact-container {
+        flex-direction: column; /* Aligne les éléments en colonne */
+        gap: 20px;
+    }
+
+    /* Formulaire */
+    .contact-form {
+        padding: 15px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Ombre plus douce */
+    }
+
+    .contact-form h2 {
+        font-size: 1.5rem; /* Réduit la taille du titre */
+    }
+
+    .form-group label {
+        font-size: 0.9rem; /* Réduit la taille du label */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 8px; /* Réduit l'espacement interne */
+        font-size: 0.9rem; /* Réduit la taille du texte */
+    }
+
+    .btn-primary {
+        font-size: 0.9rem; /* Réduit la taille du bouton */
+        padding: 10px 20px;
+    }
+
+    /* Section Réseaux Sociaux */
+    .contact-info {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .contact-image img {
+        max-width: 150px; /* Réduit la taille de l'image */
+        height: 150px;
+        margin-bottom: 15px;
+    }
+
+    .social-icons h3 {
+        font-size: 1.2rem; /* Réduit la taille du titre */
+        margin-bottom: 10px;
+    }
+
+    .icons .icon {
+        width: 40px; /* Réduit la taille des icônes */
+        height: 40px;
+    }
+
+    .contact-details {
+        font-size: 0.9rem; /* Réduit la taille du texte des coordonnées */
+    }
+
+    .contact-details h3 {
+        font-size: 1.2rem; /* Réduit la taille du titre */
+    }
+}
