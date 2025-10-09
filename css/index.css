@@ -1,0 +1,393 @@
+/* --- Reset CSS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Global Styles --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; /* Fond blanc */
+    color: #2c2c2c; /* Texte gris foncé */
+    line-height: 1.6;
+}
+
+/* --- Header --- */
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(240, 240, 240, 0.9); /* Fond gris clair */
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneur principal du header */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Espace entre le logo et le menu */
+    align-items: center;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrer le contenu */
+}
+
+/* Logo */
+.logo-container {
+    flex: 1; /* Prend l'espace à gauche */
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff7a00; /* Couleur orange */
+}
+
+
+/* Menu */
+.menu-container {
+    flex: 1; /* Prend l'espace à droite */
+    display: flex;
+    justify-content: flex-end; /* Positionne le menu à droite */
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espace entre les liens */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: inline-block;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #2c2c2c; /* Couleur par défaut */
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a.active,
+.navbar-links li a:hover {
+    color: #ff7a00; /* Couleur orange pour le lien actif ou au survol */
+}
+
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ff7a00; /* Orange principal */
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Espace entre les éléments du menu */
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 1.2rem;
+    padding: 10px 17px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a.active,
+.navbar-links li a:hover {
+    color: #ff7a00; /* Orange */
+}
+
+/* --- Hero Section --- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    height: calc(100vh - 80px); /* Prend la hauteur de l'écran */
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #2c2c2c; /* Texte gris foncé */
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    color: #ff7a00; /* Orange */
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #4a4a4a; /* Gris doux */
+    margin-bottom: 30px;
+}
+
+/* --- Boutons --- */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-right: auto;
+}
+
+.btn-primary {
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: #ff7a00; /* Orange */
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #cc6300; /* Orange foncé */
+}
+
+.btn-secondary {
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: transparent;
+    border: 2px solid #ff7a00; /* Bordure orange */
+    color: #ff7a00; /* Texte orange */
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #ff7a00; /* Orange */
+    color: #ffffff; /* Texte blanc */
+}
+
+/* --- Hero Image --- */
+.hero-image img {
+    max-width: 100%;
+    height: 100%;
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    padding: 20px 40px;
+    background-color: rgba(240, 240, 240, 0.9); /* Gris clair légèrement transparent */
+    color: #2c2c2c; /* Texte gris foncé */
+    font-size: 1rem;
+    border-top: 1px solid #ddd; /* Ligne discrète pour démarquer le footer */
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 0.9rem; /* Taille légèrement réduite */
+    color: #4a4a4a; /* Texte gris doux */
+}
+
+.footer p:last-child {
+    font-size: 0.8rem; /* Plus petit pour le texte secondaire */
+    color: #7a7a7a; /* Texte encore plus discret */
+}
+/* Section Recherche de Stage */
+.internship {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Fond légèrement gris */
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.internship-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 30px;
+}
+
+.internship-text {
+    flex: 1;
+    max-width: 60%;
+}
+
+.internship-text h3 {
+    font-size: 2rem;
+    color: #ff7a00; /* Couleur orange */
+    margin-bottom: 20px;
+}
+
+.internship-text p {
+    font-size: 1.2rem;
+    color: #4a4a4a; /* Texte gris doux */
+    line-height: 1.8;
+}
+
+.internship-photo {
+    flex: 1;
+    text-align: center;
+}
+
+.internship-photo img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Forme circulaire */
+    border: 5px solid #ff7a00; /* Bordure orange */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.internship-photo img:hover {
+    transform: scale(1.05); /* Agrandit légèrement l'image au survol */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Accentue l'ombre */
+}
+
+/* --- Responsive Design pour Tablettes et Mobiles --- */
+@media (max-width: 768px) {
+    /* Header */
+    .header-container {
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+
+    .navbar-links {
+        display: flex; /* Aligne les liens horizontalement */
+        flex-wrap: nowrap; /* Empêche les liens de passer à la ligne */
+        justify-content: center; /* Centre les liens horizontalement */
+        gap: 8px; /* Réduit l'espace entre les liens */
+        padding: 8px 0; /* Réduit l'espacement vertical du menu */
+        overflow-x: auto; /* Permet un défilement horizontal si nécessaire */
+        white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    }
+
+    .navbar-links li {
+        flex-shrink: 0; /* Les éléments ne rétrécissent pas */
+    }
+
+    .navbar-links li a {
+        font-size: 0.85rem; /* Réduit la taille des liens */
+        padding: 6px 10px; /* Ajuste l'espace interne autour des liens */
+        color: #2c2c2c; /* Couleur principale du texte */
+        border-radius: 4px; /* Coins légèrement arrondis */
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar-links li a:hover {
+        background-color: #ff7a00; /* Fond orange au survol */
+        color: white; /* Texte blanc au survol */
+    }
+
+    /* Section Hero */
+    .hero {
+        flex-direction: column; /* Le texte et l'image se réorganisent verticalement */
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem; /* Réduction de la taille des titres */
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 25px;
+    }
+
+    /* Section Recherche de Stage */
+    .internship-container {
+        flex-direction: column; /* Empile les éléments en colonne */
+        gap: 2px;
+        text-align: center;
+    }
+
+    .internship-text {
+        max-width: 100%;
+        font-size: 0.5rem;
+        padding: 20px;
+    }
+    
+.internship-text p {
+    font-size: 1rem; /* Réduit la taille du titre */
+    max-width: 100%;
+}
+
+
+    .internship-photo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Boutons */
+    .buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%; /* Les boutons occupent toute la largeur sur mobile */
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 10px 20px; /* Ajuste l'espacement pour les mobiles */
+    }
+
+    /* Uniformisation des paragraphes */
+    p {
+        font-size: 0.95rem; /* Réduction de la taille des paragraphes */
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    /* Footer */
+    .footer {
+        font-size: 0.85rem; /* Texte plus petit pour la section footer */
+    }
+}
+
+/* --- Ajustements supplémentaires pour très petits écrans (max-width: 480px) --- */
+@media (max-width: 480px) {
+    body {
+        font-size: 13px; /* Réduction de la taille globale */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Réduction des titres principaux */
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary, .btn-secondary {
+        font-size: 0.85rem;
+        padding: 8px 15px; /* Boutons plus compacts */
+    }
+}

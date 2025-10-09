@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portfolio Aissa Saoudi</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="contact-page">
+    <header class="header">
+        <div class="header-container">
+            <!-- Div pour le logo -->
+            <div class="logo-container">
+                <div class="logo">Aissa Saoudi</div>
+            </div>
+            <!-- Div pour le menu -->
+            <div class="menu-container">
+                <ul class="navbar-links">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="projects.html">Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- Titre de la page -->
+    <section class="contact-header">
+        <h1>Contactez-moi</h1>
+        <p>Utilisez le formulaire ou mes réseaux sociaux pour me joindre.</p>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="contact-hero">
+        <div class="contact-container">
+            <!-- Formulaire -->
+            <div class="contact-form">
+                <h2>Formulaire de contact</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet :</label>
+                        <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Envoyer</button>
+                </form>
+            </div>
+
+            <!-- Photo et Réseaux sociaux -->
+            <!-- Photo et Réseaux sociaux -->
+<div class="contact-info">
+    <div class="contact-image">
+        <img src="images/moi.png" alt="Photo de Aissa Saoudi">
+    </div>
+    <div class="social-icons">
+        <h3>Mes réseaux sociaux</h3>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/aissa-saoudi-prod/" target="_blank" title="Voir mon profil LinkedIn">
+                <img src="images/in.png" alt="LinkedIn" class="icon">
+            </a>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#sent?compose=CllgCJvnqzjWTGMDlCbPZplFclRLpVjNMHVhkbBCDPfVZqVmKCVZMQcgDzWcNnPMsSKFRcsXrGq" target="_blank" title="Voir mon Gmail">
+                <img src="images/gmail.jpg" alt="Gmail" class="icon">
+            </a>
+            <a href="https://github.com/SAOUDIAISSA" target="_blank" title="Voir mon GitHub">
+                <img src="images/git.png" alt="GitHub" class="icon">
+            </a>
+        </div>
+    </div>
+    <!-- Ajout des informations personnelles -->
+    <div class="contact-details">
+        <h3>Mes coordonnées</h3>
+        <p><strong>Adresse :</strong> Résidence Jules Mousseron, Aulnoy-lez-Valenciennes, 59300 Valenciennes</p>
+        <p><strong>Téléphone :</strong> 0745483552</p>
+        <p><strong>Email :</strong> <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#sent?compose=CllgCJvnqzjWTGMDlCbPZplFclRLpVjNMHVhkbBCDPfVZqVmKCVZMQcgDzWcNnPMsSKFRcsXrGq/saoudi22aissa@gmail.com">saoudi22aissa@gmail.com</a></p>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Aissa Saoudi.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

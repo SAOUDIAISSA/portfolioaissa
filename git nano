@@ -1,0 +1,27 @@
+# Ignore Windows and user folders
+AppData/
+Desktop.ini
+Documents/
+Downloads/
+Music/
+Pictures/
+Videos/
+OneDrive/
+*.lnk
+*.exe
+*.pdf
+*.docx
+*.xlsx
+*.odt
+*.odg
+*.zip
+*.mp4
+
+# Ignore everything outside this project
+../
+../../
+*.log
+node_modules/
+.DS_Store
+Library/
+
